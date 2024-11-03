@@ -1,0 +1,142 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.hparent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(50, 50, 50);
+     width: 100%;
+     height: 100px;
+     
+}
+.pname{
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0px;
+
+}
+.cartbtn{
+    padding: 10px;
+    width: 90px;
+    font-size: large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+.addProductParent{
+    text-align: center;
+    margin-top: 10px;
+}
+.addPbtn{
+    width: 250px;
+    height: 60px;
+    font-size: xx-large;
+    cursor: pointer;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 5px;
+}
+.pform{
+    background-color: black;
+    color: goldenrod;
+    height: 100px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   
+} 
+.submitbtn{
+    /* padding: 10px; */
+    /* margin-top: 50px; */
+    width: 80px;
+    height: 30px;
+    /* margin-top: 10px; */
+    margin-left: 20px;
+    cursor: pointer;
+    
+}
+.priceInp{
+    width: 80px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: larger;
+}
+.sizeInp{
+    width: 50px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: larger;
+}
+.p{
+    padding: 5px;
+    font-size: large;
+    font-weight: bold;
+    width: 180px;
+}
+.shoesImg{
+    width: 200px;
+    height: 200px;
+}
+.showProduct{
+    text-align: left;
+}
+.imgP{
+    
+    display: flex;
+    background-color: #ebebeb;
+    width: 900px;
+}
+.showp{
+    margin: 10px;
+    /* background-color: #f0f0f0; */
+    /* display: flex; */
+    
+}
+.shoesdesc{
+    margin: 10px;
+}
+.size{
+    /* background-color: aquamarine; */
+    margin: 10px;
+}
+.btnsize{
+    padding: 5px;
+    margin: 5px;
+    width: 80px;
+    height: 40px;
+    border-radius: 400px;
+    cursor: pointer;
+    border:1px solid grey;
+}
+.btnsize:hover{
+    background-color: black;
+    color: white;
+}
+.availItem{
+    border-bottom: 1px solid black;
+    margin: 5px;
+    color: grey;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.avail{
+    border-left: 1px solid black;
+}
+.plist{
+    display: flex;
+    /* flex-wrap: wrap; */
+    background-color: #f0f0f0;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.selectsize{
+    font-family:'Times New Roman', Times, serif;
+    
+}
