@@ -1,17 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
 import ProductContextProvider from "./contexts/ProductContextProvider";
+import CartItem from "./components/CartItem";
 
 
 
 const App=()=>{
+    const [showCart,setShowCart]=useState(false);
+
     return(
         <ProductContextProvider>
         <div>
-           <Header/>
+        {showCart&&<CartItem setShowCart={setShowCart}/>}
+           <Header setShowCart={setShowCart}/>
            <Body/>
+          
         </div>
         </ProductContextProvider>
     )

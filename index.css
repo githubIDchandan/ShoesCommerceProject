@@ -140,3 +140,83 @@ body{
     font-family:'Times New Roman', Times, serif;
     
 }
+.ModalWrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: grey;
+    opacity: 0.5;
+    
+}
+.Modal{
+    position: fixed;
+    background-color: white;
+    width: 800px;
+    height: 300px;
+    margin-left:380px;
+    margin-top: 80px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    
+
+}
+
+.itemList{
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    
+}
+.countshoes{
+    font-size: larger;
+    padding: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.cartempty{
+    /* background-color: aquamarine; */
+    color: grey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+}
+.btnparent{
+   
+    margin-left: 180px;
+    
+}
+.cbtn{
+   width: 200px;
+   height: 40px;
+   margin: 10px;
+   background-color: white;
+   color: red;
+   font-size: larger;
+   border-radius: 5px;
+   cursor: pointer;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.cbtn:hover{
+    background-color: black;
+}
+.pbtn{
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    background-color: white;
+    color: black;
+    font-size: larger;
+    border-radius: 5px;
+    cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.pbtn:hover{
+    background-color: cadetblue;
+    color: white;
+    border:1px solid white;
+}

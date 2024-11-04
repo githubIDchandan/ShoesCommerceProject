@@ -6,7 +6,7 @@ import ProductContext from "../contexts/ProductContext";
 
 const Body=()=>{
     const {productList,add,clearCart}=useContext(ProductContext);
-    console.log(productList)
+    // console.log(productList)
     // console.log(add);
     // console.log(clearCart)
     return(

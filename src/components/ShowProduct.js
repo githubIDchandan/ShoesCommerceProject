@@ -6,8 +6,14 @@ import { ImgUrl } from "../../utils/img";
 
 
 const ShowProduct=()=>{
-    const {productList}=useContext(ProductContext)
-    console.log(productList)
+    const {productList,purchaseItemS,purchaseItemM,purchaseItemL}=useContext(ProductContext)
+    // console.log(productList)
+
+   const smallHandler=(id,item)=>purchaseItemS(id,{...item,sSize:1,lSize:0,mSize:0});
+   const mediumHandler=(id,item)=>purchaseItemM(id,{...item,mSize:1,lSize:0,sSize:0});
+   const largeHandler=(id,item)=>purchaseItemL(id,{...item,lSize:1,mSize:0,sSize:0});
+
+
     return(
         <div className="showp">
             {productList.map((item,index)=>{
@@ -24,9 +30,12 @@ const ShowProduct=()=>{
                      
             <div className="size">
                 <h1 className="selectsize">SELECT SIZE</h1>
-                <button className="btnsize">S</button>
-                <button className="btnsize">M</button>
-                <button className="btnsize">L</button>
+                <button className="btnsize" onClick={()=>{
+                    // console.log(item)
+                    smallHandler(item.id,item)
+                }}>S</button>
+                <button className="btnsize" onClick={()=>{mediumHandler(item.id,item)}}>M</button>
+                <button className="btnsize" onClick={()=>{largeHandler(item.id,item)}}>L</button>
             </div> 
             <div className="avail">
                 <div className="availItem">

@@ -11,7 +11,7 @@ const ProductForm=({setPform})=>{
     const addHandler=(e)=>{
         e.preventDefault()
         console.log(list)
-        add(list);
+        add({...list,id:Math.random()});
         setList({Name:"",desc:"",price:0,lSize:0,mSize:0,sSize:0});
         setPform(false)
     }
