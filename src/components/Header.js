@@ -6,7 +6,7 @@ import ProductContext from "../contexts/ProductContext";
 const Header=({setShowCart})=>{
 
    const {productList,addCartList}=useContext(ProductContext);
-
+   console.log(addCartList)
     return(
         <div className="hparent">
             <div>

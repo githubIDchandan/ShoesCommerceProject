@@ -6,7 +6,11 @@ import ItemList from "./ItemList";
 const CartItem=({setShowCart})=>{
 
   const {addCartList,productList,clearCart}=useContext(ProductContext)
-   
+  
+   const total=addCartList.reduce((accum,item)=>{
+    return accum+Number(item.price);
+   },0)
+
    useEffect(()=>{
       document.body.style.overflowY="hidden";
       return ()=>{
@@ -27,7 +31,9 @@ const CartItem=({setShowCart})=>{
                  })
                }
               </div>
-             
+             <div>
+              <p className="amount">Total amount to pay : {"₹ "}{total}</p>
+             </div>
              
           </div>
          

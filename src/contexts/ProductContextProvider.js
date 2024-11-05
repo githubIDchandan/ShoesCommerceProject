@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import ProductContext from "./ProductContext"
 
 
@@ -44,8 +44,25 @@ const ProductContextProvider=({children})=>{
         //   console.log("pp",purchaseList);
           setProductList(purchaseList)
          //  console.log(props[1])
+         // console.log(props[1])
           setaddCartList([{...props[1]},...addCartList]);
        }
+
+       useEffect(()=>{
+         const list=JSON.parse(localStorage.getItem("product"));
+         const cartlist=JSON.parse(localStorage.getItem("cart"));
+           if(list){
+            setProductList(list);
+           }
+           if(cartlist){
+            setaddCartList(cartlist);
+           }
+       },[])
+
+       useEffect(()=>{
+           localStorage.setItem("product",JSON.stringify(productList));
+           localStorage.setItem("cart",JSON.stringify(addCartList))
+       },[productList,addCartList])
     
     return(
 

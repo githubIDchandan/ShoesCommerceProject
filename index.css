@@ -20,7 +20,7 @@ body{
 }
 .cartbtn{
     padding: 10px;
-    width: 90px;
+    width: 120px;
     font-size: large;
     font-family:Georgia, 'Times New Roman', Times, serif;
     cursor: pointer;
@@ -154,7 +154,7 @@ body{
     position: fixed;
     background-color: white;
     width: 800px;
-    height: 300px;
+    /* height: 0px; */
     margin-left:380px;
     margin-top: 80px;
     border-radius: 10px;
@@ -219,4 +219,30 @@ body{
     background-color: cadetblue;
     color: white;
     border:1px solid white;
+}
+.hItem{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.amount{
+    font-size: x-large;
+    font-weight: bold;
+    padding: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cleardiv{
+    /* text-align:start; */
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 30px;
+    margin-right: 50px;
+
+}
+.clearBtn{
+    background-color:white;
+    border: 1px solid grey;
+    cursor: pointer;
+    padding: 10px;
+    color:darkcyan;
+    border-radius: 5px;
 }

@@ -13,9 +13,14 @@ const App=()=>{
     return(
         <ProductContextProvider>
         <div>
+
+        <div className="cleardiv"><button className="clearBtn" onClick={()=>{
+              localStorage.clear("product");
+        }}>Clear data</button></div>
+
         {showCart&&<CartItem setShowCart={setShowCart}/>}
            <Header setShowCart={setShowCart}/>
-           <Body/>
+          <Body/>
           
         </div>
         </ProductContextProvider>

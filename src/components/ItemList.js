@@ -8,7 +8,7 @@ const ItemList=({eactProductList})=>{
    const {addCartList}=useContext(ProductContext);
    console.log(eactProductList)
     const filterList=addCartList.filter((cartItem)=>{
-        return cartItem.Name===eactProductList.Name;
+        return cartItem.id===eactProductList.id;
     })
     //  console.log("add",addCartList)
     let lcount=0,mcount=0,scount=0;
@@ -32,9 +32,7 @@ const ItemList=({eactProductList})=>{
     
     return(
         <div>
-            {
-               
-               <div className="itemList">
+             <div className="itemList">
                    <div>
                       <h2>{eactProductList.Name}</h2>
                      </div>
@@ -44,10 +42,10 @@ const ItemList=({eactProductList})=>{
                      <div>
                         <h2>{"Rs. "}{amount}{"/-"}</h2>
                      </div>
-                </div>
+              </div>
             
              
-            }
+        
         </div>
     )
 }

@@ -31,31 +31,44 @@ const ShowProduct=()=>{
             <div className="size">
                 <h1 className="selectsize">SELECT SIZE</h1>
                 <button className="btnsize" onClick={()=>{
-                    // console.log(item)
-                    smallHandler(item.id,item)
+                     if(item.sSize>0){
+                        return smallHandler(item.id,item);
+                    }
+                    
                 }}>S</button>
-                <button className="btnsize" onClick={()=>{mediumHandler(item.id,item)}}>M</button>
-                <button className="btnsize" onClick={()=>{largeHandler(item.id,item)}}>L</button>
+                <button className="btnsize" onClick={()=>{
+                    if(item.mSize>0){
+                        return mediumHandler(item.id,item);
+                    }
+                    
+                }}
+                    >M</button>
+                <button className="btnsize" onClick={()=>{
+                     if(item.lSize>0){
+                        return largeHandler(item.id,item);
+                    }
+                    }}>L</button>
             </div> 
             <div className="avail">
                 <div className="availItem">
-                    <h3>{item.lSize} Large size Available</h3>
+                    <h3 className="hItem">{item.lSize} Large size Available</h3>
                 </div>
                 <div className="availItem">
-                    <h3>{item.mSize} Medium size Available</h3>
+                    <h3 className="hItem">{item.mSize} Medium size Available</h3>
                 </div>
                 <div className="availItem">
-                    <h3>{item.sSize} Small size Available</h3>
+                    <h3 className="hItem">{item.sSize} Small size Available</h3>
                 </div>
             </div>
+           
          </div>
-        
+         
         )
             })
             
             }
               
-            
+           
 
         </div>
     )
