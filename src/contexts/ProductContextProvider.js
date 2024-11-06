@@ -6,7 +6,7 @@ import ProductContext from "./ProductContext"
 const ProductContextProvider=({children})=>{
        const [productList,setProductList]=useState([]);
        const [addCartList,setaddCartList]=useState([]);
-       const [total,seTotal]=useState(0);
+      //  const [total,seTotal]=useState(0);
     //    console.log("p",...productList)
     //    console.log("p",[...productList])
        const add=(product)=>{
